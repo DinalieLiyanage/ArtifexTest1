@@ -1,6 +1,7 @@
 export interface IUserDAO {
     id?: string;
-    displayName?: string;
+    name?: string;
+    email?: string;
     username?: string;
     password?: string;
 
@@ -9,8 +10,8 @@ export interface IUserDAO {
 export class UserDAO implements IUserDAO {
     constructor(
         public id?: string,
-        public displayName?: string,
-        public username?: string,
+        public name?: string,
+        public email?: string,
         public password?: string
     ) {
 
